@@ -1,0 +1,235 @@
+<!--
+Copyright © 2018 Rishat Kagirov (iEPCBM)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Расписание уроков
+        </title>
+        <style>
+            body {
+                margin: 0;
+                background-color: #BEFBEF;
+            }
+            .mcontent {
+                display: flex;
+                justify-content: center;
+                margin: 25px 0;
+            }
+            .content {
+                width: 50%;
+                /*border: solid 1px #000;*/
+                min-height: 100px;
+            }
+            table {
+                /*border: solid 1px #000*/
+                border-collapse: collapse;
+            }
+            td, th {
+                border: 1px solid #000;
+                padding: 5px;
+            }
+        </style>
+        <script type="application/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+        <script type="application/javascript" src="s_table.js"></script>
+    </head>
+    <body>
+        <div class="mcontent">
+            <div class="content">
+                <table id="lessons-tt">
+                    <thead>
+                        <tr>
+                            <th>
+                               № п/п
+                            </th>
+                            <th>
+                               Время начала
+                            </th>
+                            <th>
+                               Время окончания
+                            </th>
+                            <th>
+                               Продолжительность
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="content-tt">
+                            <td class="number-tt">
+                               
+                            </td>
+                            <td class="begin-tt">
+                               8:00
+                            </td>
+                            <td class="end-tt">
+                               8:40
+                            </td>
+                            <td>
+                               40
+                            </td>
+                        </tr>
+                        <tr class="content-tt">
+                            <td class="number-tt">
+                               
+                            </td>
+                            <td class="begin-tt">
+                               8:50
+                            </td>
+                            <td class="end-tt">
+                               9:30
+                            </td>
+                            <td>
+                               40
+                            </td>
+                        </tr>
+                        <tr class="content-tt">
+                            <td class="number-tt">
+                               
+                            </td>
+                            <td class="begin-tt">
+                               9:40
+                            </td>
+                            <td class="end-tt">
+                               10:20
+                            </td>
+                            <td>
+                               40
+                            </td>
+                        </tr>
+                        <tr class="content-tt">
+                            <td class="number-tt">
+                               
+                            </td>
+                            <td class="begin-tt">
+                               10:35
+                            </td>
+                            <td class="end-tt">
+                               11:15
+                            </td>
+                            <td>
+                               40
+                            </td>
+                        </tr>
+                        <tr class="content-tt">
+                            <td class="number-tt">
+                               
+                            </td>
+                            <td class="begin-tt">
+                               11:25
+                            </td>
+                            <td class="end-tt">
+                               12:05
+                            </td>
+                            <td>
+                               40
+                            </td>
+                        </tr>
+                        <tr class="content-tt">
+                            <td class="number-tt">
+                               
+                            </td>
+                            <td class="begin-tt">
+                               12:10
+                            </td>
+                            <td class="end-tt">
+                               12:50
+                            </td>
+                            <td>
+                               40
+                            </td>
+                        </tr>
+                        <tr class="content-tt">
+                            <td class="number-tt">
+                               
+                            </td>
+                            <td class="begin-tt">
+                               13:00
+                            </td>
+                            <td class="end-tt">
+                               13:40
+                            </td>
+                            <td>
+                               40
+                            </td>
+                        </tr>
+                        <tr class="content-tt">
+                            <td class="number-tt">
+                               
+                            </td>
+                            <td class="begin-tt">
+                               13:50
+                            </td>
+                            <td class="end-tt">
+                               14:30
+                            </td>
+                            <td>
+                               40
+                            </td>
+                        </tr>
+                        <tr class="content-tt">
+                            <td class="number-tt">
+                               
+                            </td>
+                            <td class="begin-tt">
+                               14:40
+                            </td>
+                            <td class="end-tt">
+                               15:20
+                            </td>
+                            <td>
+                               40
+                            </td>
+                        </tr>
+                        <tr class="content-tt">
+                            <td class="number-tt">
+                               
+                            </td>
+                            <td class="begin-tt">
+                               15:30
+                            </td>
+                            <td class="end-tt">
+                               16:10
+                            </td>
+                            <td>
+                               40
+                            </td>
+                        </tr>
+                        <tr class="content-tt">
+                            <td class="number-tt">
+                               
+                            </td>
+                            <td class="begin-tt">
+                               19:00
+                            </td>
+                            <td class="end-tt">
+                               20:10
+                            </td>
+                            <td>
+                               40
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
