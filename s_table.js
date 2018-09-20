@@ -40,5 +40,6 @@ $(document).ready(function () {
     for (i=0;i<$("#lessons-tt>tbody>tr.content-tt").size();i++) {
         $("#lessons-tt>tbody>tr.content-tt:eq("+i+")>td.number-tt").html((i+1)+".");
     }
+    update ();
     var timer = setInterval (update, 1000);
 });
