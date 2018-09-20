@@ -21,8 +21,9 @@
  */
 $(document).ready(function () {
     var i=0, b,e;
+    var pad = "00";
     var start = new Date();
-    start.getHours();
+    $(".cur-time").html((pad+start.getHours()).slice(-pad.length)+":"+(pad+start.getMinutes()).slice(-pad.length)+":"+(pad+start.getSeconds()).slice(-pad.length));
     for (i=0;i<$("#lessons-tt>tbody>tr.content-tt").size();i++) {
         $("#lessons-tt>tbody>tr.content-tt:eq("+i+")>td.number-tt").html((i+1)+".");
         beginT = $("#lessons-tt>tbody>tr.content-tt:eq("+i+")>td.begin-tt").html().match(/([0-9]*):([0-9]*)/i);
