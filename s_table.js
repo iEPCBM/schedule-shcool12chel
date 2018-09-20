@@ -19,13 +19,13 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-$(document).ready(function () {
-    var i=0, b,e;
+
+function update () {
+    var b,e;
     var pad = "00";
     var start = new Date();
     $(".cur-time").html((pad+start.getHours()).slice(-pad.length)+":"+(pad+start.getMinutes()).slice(-pad.length)+":"+(pad+start.getSeconds()).slice(-pad.length));
     for (i=0;i<$("#lessons-tt>tbody>tr.content-tt").size();i++) {
-        $("#lessons-tt>tbody>tr.content-tt:eq("+i+")>td.number-tt").html((i+1)+".");
         beginT = $("#lessons-tt>tbody>tr.content-tt:eq("+i+")>td.begin-tt").html().match(/([0-9]*):([0-9]*)/i);
         endT = $("#lessons-tt>tbody>tr.content-tt:eq("+i+")>td.end-tt").html().match(/([0-9]*):([0-9]*)/i);
         if (((parseInt(beginT[1])*60+parseInt(beginT[2]))<=(start.getHours()*60+start.getMinutes())) &&
@@ -33,4 +33,12 @@ $(document).ready(function () {
             $("#lessons-tt>tbody>tr.content-tt:eq("+i+")").css({backgroundColor: "#feb"});
         }
     }
+}
+
+$(document).ready(function () {
+    var i=0;
+    for (i=0;i<$("#lessons-tt>tbody>tr.content-tt").size();i++) {
+        $("#lessons-tt>tbody>tr.content-tt:eq("+i+")>td.number-tt").html((i+1)+".");
+    }
+    var timer = setInterval (update, 1000);
 });
